@@ -91,10 +91,15 @@ export default function Footer() {
           </p>
           <p className="text-sand-200/60 text-sm">
             Built with ❤️ by{' '}
-            <a href="#contribution" className="text-terracotta-400 hover:text-terracotta-300 transition-colors">
+            <a
+              href="https://github.com/paul-kimani"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-terracotta-400 hover:text-terracotta-300 transition-colors"
+            >
               Paul Mwaniki Kimani
             </a>
-            {' '}— Service Learning Project
+            {' '}— SBL Volunteer
           </p>
         </div>
       </div>

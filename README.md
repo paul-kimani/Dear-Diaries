@@ -89,11 +89,11 @@ The Supabase database includes:
 
 ---
 
-## 👤 Founder
+## 🙏 Built By
 
-**Paul Mwaniki Kimani** — Founder, Dear Diaries Initiative
+**Paul Mwaniki Kimani** — Volunteer & Developer
 
-I believe that real change starts with access: access to basic dignity, access to financial knowledge, and access to technology that serves communities rather than extracts from them.
+I'm not the founder — I'm simply someone who did my Service-Based Learning in the Turkana region, witnessed the need firsthand, and came back to build something useful. This site is built from the heart, pro-bono, for a community that gave me more than I could ever give back.
 
 ---
 

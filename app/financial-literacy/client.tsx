@@ -38,9 +38,9 @@ export default function FinancialLiteracyClient({ notes, videos }: Props) {
             </h1>
             <p className="text-sand-200/80 text-xl max-w-2xl mx-auto font-inter leading-relaxed">
               Free financial education for <em>everyone</em> — regardless of income or background.
-              Learn to budget, save, and build a secure future. Curated personally by
+              Learn to budget, save, and build a more secure future. Curated by
               {' '}<span className="text-terracotta-400 font-semibold">Paul Mwaniki Kimani</span>,
-              founder of Dear Diaries Initiative.
+              a volunteer who served in Turkana and continues to give back.
             </p>
           </div>
         </section>

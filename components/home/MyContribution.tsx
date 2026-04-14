@@ -25,23 +25,22 @@ export default function MyContribution() {
             <div className="text-center md:text-left">
               <div className="inline-flex items-center gap-2 bg-terracotta-100 text-terracotta-700 text-xs font-outfit font-semibold px-3 py-1.5 rounded-full mb-4 border border-terracotta-200">
                 <GraduationCap className="w-3.5 h-3.5" />
-                The Founder
+                Built with Heart
               </div>
               <h2 className="font-outfit font-bold text-turkana-deep text-3xl md:text-4xl mb-3">
-                Built by Paul Mwaniki Kimani
+                By Paul Mwaniki Kimani
               </h2>
               <p className="text-gray-600 leading-relaxed text-lg mb-3 max-w-xl">
-                I started the{' '}
-                <span className="font-semibold text-terracotta-600">Dear Diaries Initiative</span>{' '}
-                because I believe that real change starts with access — access to basic dignity, access to
-                education, and access to the financial knowledge to build a better life.
+                This platform was built as part of a{' '}
+                <span className="font-semibold text-terracotta-600">Service-Based Learning</span>{' '}
+                experience in the Turkana region — pro-bono technology work that came from a genuine
+                desire to give back to a community that left a lasting mark on me.
               </p>
               <p className="text-gray-500 leading-relaxed mb-6 max-w-xl">
-                Beyond distributing reusable pads and supporting meals programmes, my personal mission is to
-                provide{' '}
-                <span className="font-semibold text-turkana-blue">practical financial literacy</span>{' '}
-                for everyone — so any individual, regardless of background, can learn to budget smarter
-                and break cycles of poverty.
+                I am not the founder — just someone who showed up, witnessed the need firsthand,
+                and chose to do something about it. Beyond the programmes here, I personally believe in{' '}
+                <span className="font-semibold text-turkana-blue">financial literacy for everyone</span>{' '}
+                — so that any person, anywhere, can learn to budget and build a more secure future.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
@@ -57,7 +56,7 @@ export default function MyContribution() {
                 </a>
                 <a
                   id="github-link"
-                  href="https://github.com/paul-mwaniki"
+                  href="https://github.com/paul-kimani"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-secondary flex items-center gap-2 justify-center"
