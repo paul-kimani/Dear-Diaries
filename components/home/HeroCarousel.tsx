@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useCallback } from 'react'
+import Image from 'next/image'
 import useEmblaCarousel from 'embla-carousel-react'
 import { ChevronLeft, ChevronRight, Heart } from 'lucide-react'
 
@@ -77,13 +78,22 @@ export default function HeroCarousel({ onDonateClick }: HeroCarouselProps) {
             <div
               key={slide.id}
               className="relative flex-none w-full h-full"
-              style={{
-                background: imageErrors[i] ? gradients[i] : gradients[i],
-              }}
+              style={{ background: gradients[i] }}
             >
+              {/* Hero photo */}
+              {!imageErrors[i] && (
+                <Image
+                  src={slide.image}
+                  alt={slide.badge}
+                  fill
+                  priority={i === 0}
+                  className="object-cover object-center"
+                  onError={() => setImageErrors((prev) => ({ ...prev, [i]: true }))}
+                />
+              )}
               {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-r from-turkana-deep/90 via-turkana-deep/70 to-transparent z-10" />
-              <div className="absolute inset-0 bg-gradient-to-t from-turkana-deep/80 via-transparent to-transparent z-10" />
+              <div className="absolute inset-0 bg-gradient-to-r from-turkana-deep/90 via-turkana-deep/60 to-turkana-deep/20 z-10" />
+              <div className="absolute inset-0 bg-gradient-to-t from-turkana-deep/70 via-transparent to-transparent z-10" />
 
               {/* Content */}
               <div className="relative z-20 h-full flex items-center">
