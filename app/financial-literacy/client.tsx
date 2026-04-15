@@ -72,6 +72,7 @@ export default function FinancialLiteracyClient({ notes, videos }: Props) {
                         {activeVideo === video.id ? (
                           <iframe
                             src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
+                            title={video.title}
                             className="w-full h-full"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
