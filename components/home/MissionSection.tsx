@@ -75,16 +75,19 @@ const missions = [
 
 export default function MissionSection() {
   return (
-    <section id="mission" className="section-padding bg-sand-50">
+    <section id="mission" className="section-padding bg-[#07111b] relative overflow-hidden">
+      {/* Ambient glow orbs */}
+      <div className="glow-orb w-96 h-96 bg-terracotta-600/15 -top-20 -left-20" />
+      <div className="glow-orb w-80 h-80 bg-turkana-blue/15 bottom-10 right-10" style={{ animationDelay: '4s' }} />
       <div className="container-width">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-terracotta-100 text-terracotta-700 text-xs font-outfit font-semibold px-4 py-2 rounded-full mb-4 border border-terracotta-200">
             Our Programmes
           </div>
-          <h2 className="font-outfit font-bold text-turkana-deep text-3xl md:text-5xl mb-4">
+          <h2 className="font-outfit font-bold text-white text-3xl md:text-5xl mb-4">
             Three Pillars. <span className="gradient-text">One Mission.</span>
           </h2>
-          <p className="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-sand-300/70 text-lg max-w-2xl mx-auto leading-relaxed">
             Everything we do is rooted in dignity, equity, and the belief that every person —
             regardless of ability, gender, or income — deserves a full and meaningful life.
           </p>
@@ -96,7 +99,7 @@ export default function MissionSection() {
             return (
               <div
                 key={mission.id}
-                className={`bg-gradient-to-br ${mission.gradientFrom} ${mission.gradientTo} rounded-3xl p-8 border ${mission.borderColor} shadow-xl ${mission.glowColor} card-hover group flex flex-col`}
+                className={`bg-white/[0.04] backdrop-blur-sm rounded-3xl p-8 border border-white/10 hover:border-white/20 shadow-xl ${mission.glowColor} card-hover group flex flex-col`}
               >
                 <div className={`inline-flex items-center gap-1.5 text-xs font-outfit font-semibold px-3 py-1.5 rounded-full border mb-6 ${mission.badgeColor}`}>
                   {mission.badge}
@@ -107,20 +110,20 @@ export default function MissionSection() {
                     <Icon className={`w-7 h-7 ${mission.iconColor}`} />
                   </div>
                   <div>
-                    <h3 className="font-outfit font-bold text-turkana-deep text-xl mb-1">{mission.title}</h3>
+                    <h3 className="font-outfit font-bold text-white text-xl mb-1">{mission.title}</h3>
                     <p className={`font-inter text-sm font-medium italic ${mission.accentColor}`}>{mission.subtitle}</p>
                   </div>
                 </div>
 
-                <p className="text-gray-600 leading-relaxed mb-7 font-inter flex-1">{mission.description}</p>
+                <p className="text-sand-300/80 leading-relaxed mb-7 font-inter flex-1">{mission.description}</p>
 
                 <div className="grid grid-cols-2 gap-4 mb-7">
                   {mission.stats.map((stat) => {
                     const StatIcon = stat.icon
                     return (
-                      <div key={stat.label} className="bg-white/70 backdrop-blur-sm rounded-xl p-4 border border-white/50">
+                      <div key={stat.label} className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10">
                         <div className={`font-outfit font-bold text-2xl ${mission.accentColor} mb-1`}>{stat.value}</div>
-                        <div className="text-gray-500 text-xs font-inter flex items-center gap-1.5">
+                        <div className="text-sand-300/60 text-xs font-inter flex items-center gap-1.5">
                           <StatIcon className="w-3.5 h-3.5" />
                           {stat.label}
                         </div>

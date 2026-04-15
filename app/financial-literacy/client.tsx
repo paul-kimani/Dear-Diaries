@@ -47,12 +47,14 @@ export default function FinancialLiteracyClient({ notes, videos }: Props) {
 
         {/* Video section */}
         {videos.length > 0 && (
-          <section className="section-padding">
+          <section className="section-padding bg-[#07111b] relative overflow-hidden">
+            <div className="glow-orb w-96 h-72 bg-turkana-blue/10 top-10 right-10" />
+            <div className="glow-orb w-72 h-72 bg-terracotta-600/10 bottom-0 left-0" style={{ animationDelay: '5s' }} />
             <div className="container-width">
               <div className="flex items-center justify-between mb-8">
                 <div>
-                  <h2 className="font-outfit font-bold text-turkana-deep text-3xl mb-1">Video Lessons</h2>
-                  <p className="text-gray-500 font-inter">Watch and learn at your own pace</p>
+                  <h2 className="font-outfit font-bold text-white text-3xl mb-1">Video Lessons</h2>
+                  <p className="text-sand-300/70 font-inter">Watch and learn at your own pace</p>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-gray-400">
                   <Play className="w-4 h-4" />
@@ -66,7 +68,7 @@ export default function FinancialLiteracyClient({ notes, videos }: Props) {
                   const thumbnail = videoId ? `https://img.youtube.com/vi/${videoId}/mqdefault.jpg` : null
 
                   return (
-                    <div key={video.id} className="bg-white rounded-2xl overflow-hidden shadow-md card-hover border border-sand-100 group">
+                    <div key={video.id} className="bg-white/[0.05] backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 hover:border-terracotta-500/30 card-hover group">
                       {/* Thumbnail */}
                       <div className="relative aspect-video bg-turkana-deep overflow-hidden">
                         {activeVideo === video.id ? (
@@ -97,9 +99,9 @@ export default function FinancialLiteracyClient({ notes, videos }: Props) {
 
                       {/* Info */}
                       <div className="p-5">
-                        <h3 className="font-outfit font-bold text-turkana-deep text-base mb-1">{video.title}</h3>
+                        <h3 className="font-outfit font-bold text-white text-base mb-1">{video.title}</h3>
                         {video.description && (
-                          <p className="text-gray-500 text-sm font-inter line-clamp-2">{video.description}</p>
+                          <p className="text-sand-300/60 text-sm font-inter line-clamp-2">{video.description}</p>
                         )}
                         <div className="mt-3 flex items-center gap-1 text-xs text-gray-400">
                           <Clock className="w-3 h-3" />
@@ -115,12 +117,13 @@ export default function FinancialLiteracyClient({ notes, videos }: Props) {
         )}
 
         {/* Notes section */}
-        <section className="section-padding bg-white">
-          <div className="container-width">
+        <section className="section-padding bg-[#060e17] relative overflow-hidden">
+          <div className="glow-orb w-96 h-60 bg-terracotta-600/8 top-0 left-0" />
+          <div className="container-width relative z-10">
             <div className="flex items-center justify-between mb-8">
               <div>
-                <h2 className="font-outfit font-bold text-turkana-deep text-3xl mb-1">Reading Materials</h2>
-                <p className="text-gray-500 font-inter">In-depth articles and guides</p>
+                <h2 className="font-outfit font-bold text-white text-3xl mb-1">Reading Materials</h2>
+                <p className="text-sand-300/70 font-inter">In-depth articles and guides</p>
               </div>
               <div className="flex items-center gap-2 text-sm text-gray-400">
                 <BookOpen className="w-4 h-4" />
@@ -139,15 +142,15 @@ export default function FinancialLiteracyClient({ notes, videos }: Props) {
                   <Link
                     key={note.id}
                     href={`/financial-literacy/${note.slug}`}
-                    className="group bg-sand-50 hover:bg-sand-100 rounded-2xl p-6 border border-sand-100 hover:border-sand-200 transition-all card-hover block"
+                    className="group bg-white/5 hover:bg-white/8 rounded-2xl p-6 border border-white/10 hover:border-terracotta-500/30 transition-all card-hover block"
                   >
                     <div className="flex items-start justify-between mb-3">
-                      <div className="w-10 h-10 rounded-xl bg-terracotta-100 flex items-center justify-center">
-                        <BookOpen className="w-5 h-5 text-terracotta-600" />
+                      <div className="w-10 h-10 rounded-xl bg-terracotta-900/40 flex items-center justify-center">
+                        <BookOpen className="w-5 h-5 text-terracotta-400" />
                       </div>
                       <ArrowRight className="w-4 h-4 text-gray-300 group-hover:text-terracotta-400 group-hover:translate-x-1 transition-all" />
                     </div>
-                    <h3 className="font-outfit font-bold text-turkana-deep text-xl mb-2 group-hover:text-terracotta-700 transition-colors">
+                    <h3 className="font-outfit font-bold text-white text-xl mb-2 group-hover:text-terracotta-400 transition-colors">
                       {note.title}
                     </h3>
                     <div className="flex items-center gap-2 text-xs text-gray-400 font-inter">
