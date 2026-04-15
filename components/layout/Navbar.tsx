@@ -44,8 +44,8 @@ export default function Navbar({ onDonateClick }: NavbarProps) {
               <Heart className="w-5 h-5 text-white fill-white" />
             </div>
             <div>
-              <div className="font-outfit font-bold text-white text-lg leading-none">Dear Diaries</div>
-              <div className="text-sand-200 text-xs font-inter tracking-widest uppercase opacity-80">Initiative</div>
+              <div className="font-outfit font-bold text-white text-lg leading-none">Dear Diary</div>
+              <div className="text-sand-200 text-xs font-inter tracking-widest uppercase opacity-80">Initiatives Kenya</div>
             </div>
           </Link>
 

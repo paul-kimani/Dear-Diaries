@@ -82,7 +82,7 @@ export default function ImpactCalculator({ onDonateClick }: ImpactCalculatorProp
             See Your Impact <span className="gradient-text">in Real Time</span>
           </h2>
           <p className="text-sand-200/80 text-lg max-w-2xl mx-auto">
-            Choose an amount and instantly see how many lives you can transform in the Turkana region.
+            Choose an amount and instantly see how many lives you can transform across Kenya.
           </p>
         </div>
 
@@ -142,7 +142,7 @@ export default function ImpactCalculator({ onDonateClick }: ImpactCalculatorProp
                 <span className="text-xl ml-2">pads</span>
               </div>
               <p className="text-sand-200/70 text-sm leading-relaxed">
-                Reusable sanitary pads for women in Turkana, keeping girls in school and restoring dignity.
+                Reusable sanitary pads for women &amp; girls across Kenya — Takaungu, Voi, Chanagande and beyond.
               </p>
               <div className="mt-4 text-xs text-sand-300/60 font-inter">
                 @ KES {settings.pad_cost_ksh} per pad
@@ -161,13 +161,13 @@ export default function ImpactCalculator({ onDonateClick }: ImpactCalculatorProp
               </div>
               <div className={`font-outfit font-bold text-white mb-1 transition-all duration-300 ${loading ? 'animate-pulse' : ''}`}>
                 <span className="text-4xl md:text-5xl">{loading ? '...' : impact.meals}</span>
-                <span className="text-xl ml-2">meals</span>
+                <span className="text-xl ml-2">people</span>
               </div>
               <p className="text-sand-200/70 text-sm leading-relaxed">
-                Targeted support, assistive resources and programmes for disabled individuals — ensuring no one is left behind.
+                People supported with assistive devices, advocacy, and resources — wheelchairs, walkers, crutches &amp; more.
               </p>
               <div className="mt-4 text-xs text-sand-300/60 font-inter">
-                @ KES {settings.meal_cost_ksh} per meal
+                @ KES {settings.meal_cost_ksh} per person supported
               </div>
             </div>
           </div>

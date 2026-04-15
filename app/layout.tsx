@@ -15,12 +15,12 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Dear Diaries Initiative | Empowering Disadvantaged Communities',
+  title: 'Dear Diary Initiatives Kenya | DISABILITY is not INABILITY',
   description:
-    'We serve all disadvantaged individuals — with a special focus on women who cannot afford sanitary pads in Turkana, disabled people, and anyone who needs financial literacy to budget their way to a better life.',
-  keywords: ['NGO', 'Kenya', 'sanitary pads', 'disability', 'women empowerment', 'financial literacy', 'Turkana', 'disadvantaged'],
+    'Dear Diary Initiatives Kenya is a registered CBO (#09138) founded by Miss Nafisa Khanbhai. We advocate for the rights of people with disabilities, fight period poverty, and empower women across Kenya through education, art, and community action.',
+  keywords: ['NGO', 'Kenya', 'disability', 'period poverty', 'women empowerment', 'Mombasa', 'Nafisa Khanbhai', 'CBO', 'sanitary pads', 'wheelchair'],
   openGraph: {
-    title: 'Dear Diaries Initiative',
+    title: 'Dear Diary Initiatives Kenya',
     description: 'Empowering communities through meals and dignity in the Turkana region.',
     type: 'website',
   },

@@ -40,8 +40,8 @@ export default function AdminSidebar({ userEmail }: Props) {
             <Heart className="w-4 h-4 text-white fill-white" />
           </div>
           <div>
-            <div className="font-outfit font-bold text-white text-sm">Dear Diaries</div>
-            <div className="text-sand-300/60 text-xs">Admin Panel</div>
+            <div className="font-outfit font-bold text-white text-sm">Dear Diary</div>
+            <div className="text-sand-300/60 text-xs">Initiatives Kenya</div>
           </div>
         </div>
       </div>

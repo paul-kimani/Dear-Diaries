@@ -6,6 +6,7 @@ import Footer from '@/components/layout/Footer'
 import HeroCarousel from '@/components/home/HeroCarousel'
 import ImpactCalculator from '@/components/home/ImpactCalculator'
 import MissionSection from '@/components/home/MissionSection'
+import FounderSection from '@/components/home/FounderSection'
 import MyContribution from '@/components/home/MyContribution'
 import DonationModal from '@/components/donation/DonationModal'
 
@@ -25,6 +26,7 @@ export default function HomePage() {
         <HeroCarousel onDonateClick={() => openDonation()} />
         <ImpactCalculator onDonateClick={openDonation} />
         <MissionSection />
+        <FounderSection />
         <MyContribution />
       </main>
       <Footer />
